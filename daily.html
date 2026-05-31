@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>公周问答 · 2026-05-31</title>
+<style>
+  :root {
+    --bg: #f0f2f5;
+    --card-bg: #ffffff;
+    --text: #1a1a2e;
+    --text-secondary: #666;
+    --accent: #4facfe;
+    --accent-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --border: #e8eaed;
+    --shadow: 0 2px 12px rgba(0,0,0,0.06);
+    --reply-bg: #f8fafc;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { 
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg); color: var(--text); line-height:1.6;
+    padding: 16px; max-width: 680px; margin: 0 auto;
+  }
+  .page-header {
+    text-align: center; padding: 24px 0; 
+    background: var(--accent-gradient); color: #fff;
+    border-radius: 16px; margin-bottom: 20px;
+  }
+  .page-header h1 { font-size: 22px; margin-bottom: 4px; }
+  .page-header .subtitle { font-size: 13px; opacity: 0.9; }
+  
+  .card {
+    background: var(--card-bg); border-radius: 14px; padding: 20px;
+    margin-bottom: 18px; box-shadow: var(--shadow);
+    border-left: 4px solid var(--accent);
+  }
+  .card-header { display:flex; align-items:center; gap:8px; margin-bottom:8px; flex-wrap:wrap; }
+  .card-num { background:var(--accent); color:#fff; font-size:11px; padding:2px 8px; border-radius:10px; font-weight:600; }
+  .card-topic { font-size:12px; color:#888; background:#f0f0f5; padding:2px 8px; border-radius:4px; }
+  .badge-priority { font-size:11px; color:#e6a817; background:#fff8e1; padding:2px 6px; border-radius:4px; }
+  .badge-tag { font-size:11px; color:var(--accent); background:#e8f0fe; padding:2px 6px; border-radius:4px; }
+  .card-title { font-size:17px; font-weight:700; margin-bottom:8px; line-height:1.5; }
+  .card-meta { font-size:12px; color:#999; margin-bottom:12px; display:flex; gap:12px; flex-wrap:wrap; }
+  
+  .content-block { margin-bottom:14px; }
+  .content-block.reply { background:var(--reply-bg); border-radius:10px; padding:14px; }
+  .block-label { font-size:12px; font-weight:700; color:#555; margin-bottom:6px; }
+  .block-text { font-size:14px; color:#333; line-height:1.8; white-space:pre-wrap; word-break:break-word; }
+  
+  .reflection-area { margin-top:12px; border-top:1px dashed var(--border); padding-top:12px; }
+  .reflection-input {
+    width:100%; min-height:80px; border:1px solid var(--border); border-radius:8px;
+    padding:10px 12px; font-size:14px; font-family:inherit; line-height:1.6;
+    resize:vertical; outline:none; transition:border-color 0.2s;
+  }
+  .reflection-input:focus { border-color:var(--accent); }
+  .reflection-hint { font-size:11px; color:#bbb; margin-top:4px; }
+  
+  .card-footer { display:flex; justify-content:space-between; align-items:center; margin-top:12px; }
+  .dislike-link { font-size:12px; color:#e74c3c; text-decoration:none; }
+  .dislike-link:hover { text-decoration:underline; }
+  .qid { font-size:11px; color:#ccc; }
+  
+  .page-footer { text-align:center; padding:20px; color:#aaa; font-size:12px; }
+  .page-footer a { color:var(--accent); text-decoration:none; }
+  
+  @media (max-width:480px) {
+    body { padding:10px; }
+    .card { padding:14px; }
+    .card-title { font-size:15px; }
+  }
+</style>
+</head>
+<body>
+  <div class="page-header">
+    <h1>📖 公周问答 · 每日精选</h1>
+    <div class="subtitle">2026-05-31 周日</div>
+  </div>
+  
+  
+    <article class="card" id="q3580">
+      <div class="card-header">
+        <span class="card-num">1/5</span>
+        <span class="card-topic">一、向上管理</span>
+        <span class="badge-priority">⭐重点</span>
+        <span class="badge-tag">省直机关</span>
+      </div>
+      <h2 class="card-title">刑庭工作压力大、书记员教不会，经常加班，怎么办？</h2>
+      <div class="card-meta">
+        <span>🏛️ 公务员</span>
+        <span>📍 省直机关</span>
+        <span>👤 不明</span>
+        <span>提问人：匿名</span>
+      </div>
+      
+      <div class="content-block question">
+        <div class="block-label">📝 提问内容</div>
+        <div class="block-text"><p>公周老师，我的情况：女97，家省会，工作在本市某县公安局政治处，学历在县里算很高。19年底入职，刚上班跟师傅搞宣传写材料，加班多。20年底借调到市纪委（纪委校友通过师姐找到的我），当时在这工作心情不好，也没能力运作调去其他部门，直接同意。走时A（分管局党委，政治处主任）不放人，骂我我顶了他。借调期间偶尔有事回原单位会去找A聊一两句，也没带东西（其实入职前几乎所有人家长都找A送过，为了选部门和照顾）。听说他在新旧局长那里都没我好话。<br>22年年初局长高升，走前提了一批，之前干人事的姐C成为政治处负责人（C和A交情深）2022年4月新一把从省厅到任。新一把对所有借调的意见都很大，让回来，纪委副书记找多个领导说情才同意。我觉得得罪原单位领导，也留不到纪委（不满足党员这个硬条件），主动找室主任说想回原单位，主任表示理解（之前主任帮我牵线搭桥找原局长解决入党，但还没办成他就调任了）。<br>22年9月底回到原单位，听别人建议，送了A两张500购物卡。回来后A对我态度很好，一是我对他强撑着表现出来喜欢他、热情，二是他今明年就该交流去别县了，无欲无求。C让我干教育训练，但名义上是政治处另一位民警D牵头，所有能在领导面前露脸的大型活动都是准备工作加班有我，但现场就让D去。<br>（D比我早一年入职，之前在派出所，20年就找A想来，22年8月终调入政治处，应该给AC都送过）<br>10月底县委抽人巡察，AC让我去了。今年一月中旬回来，继续干教育训练，自认没有特别积极，就是保持节奏感，较忙但也有摸鱼的时候，偶尔加班。有责任心该干的干好，偶尔科室组织一些局长政委都参加的会我会去主动帮同事，为了刷存在感。幸运的是有三四次加班被局长看到，记得一次是笑着跟我打招呼，一次是进屋问了一句。<br>前段时间C与A商量后让我同时牵头人事工作。目前状态就是有时给我些人事的活，大部分还是她自己直接安排给她的亲信辅警们（一直干人事的）。前几天市局教育训练一季度考评我局是第二，昨晚C给我打电话，说一把看到了夸她，她说都是我一个人加班加点弄的（教育训练的确只有我在干，D带着俩辅警干队管和宣传，宣传基本都是之前跟我的那位辅警在干），她说一把手说我能力强，说下周只请我俩人吃个饭。<br>我想问饭局上我该以什么心态和一把手聊，我目前的诉求就是尽快入党（有限党员的岗位了能报考），如果以后遴选笔试过了，面试想找一把手帮忙（这是后话了，且不说笔试能否过，到时候一把手也可能换人，这个感觉我维持良好印象就好）。怎么表现的不功利但上进踏实。一些会问到我的问题我该怎么回。还有我以后该怎么干、处世。听说新局长有点压不住，比较随和，有人不听他的。他来这应该是跳板，没有狠抓业务，可能有点看不上县里，重视队伍建设教育训练，重视人员素质提升。</p></div>
+      </div>
+      
+      <div class="content-block reply">
+        <div class="block-label">💬 公周回复</div>
+        <div class="block-text"><p>1.综合现有情况，你的整体发展态势不错，一些操作颇有章法，符合咱们一贯所提倡。比如借调耽误发展节奏，防止“久借不调”，你选择了及时返岗；与A的关系，虽有之前顶撞，但返岗后能伏低做小、灵活应变，有效缓和矛盾；工作上能够把握节奏、抓住重点，不做老黄牛、注意刷存在；长远发展上，以遴选回市局为主要目标，思路比较清晰，同时也结合婚恋情况做了两手准备、两个方案；对现任一把手，既能积极主动接触、提前预备沟通策略，又能通过他的施政思路（没有大抓业务），预判他过路财神、任职不久，明确从他这里重点争取入党机会的策略，才二十几岁的女孩，能想到这些殊为不易。<br>罗列以上，一方面是对你提出表扬，证明这几年自身学习历练没有白费，星球学习或有助益；另一方面也是希望你再接再厉、稳扎稳打，相信天随人愿、好运迭至。<br>2.关于这次会面，让我帮你罗列可能的问题，给出标准答案来背诵，这恐怕不现实，也不符合我的一贯服务方针。只能给几条原则性的建议：<br>其一，投桃报李。因为一季度考核成绩较好，局长亲自请客，就请你们两位，可见对这项工作的重视、对你们两位的鼓励。C也肯定了你的成绩，把你作为主要功臣摆出来（而不是D），在局长那里说了你的好话。领导姿态放低了，你当然要懂事一点，把领导扶起来、送上去。从你的角度，谈到成绩时，一方面要感谢局长、局班子对这项工作的高度重视、大力支持，捎带着夸赞一下领导到任一年来，政治生态、工作氛围、干警风貌的大变化；另一方面要感谢C，作为部门领导身先士卒、凝心聚力，抓业务、带队伍非常得力，自己受到很多关心照顾，得到学习成长的宝贵机会。<br>其二，虚虚实实。请客的人是领导，自然不能像亲朋好友那么随意；坐在饭桌旁，当然也不能像会议桌前那么一本正经。如果一味吹捧领导、说些虚情假意的话，自己都觉得尴尬，显得年纪轻轻、故作油滑，效果反而不好。所以一方面要言之有物，比如参加工作第一站，对局里有感情；局处领导对自己关心照顾，先后借调市纪委、县委巡察，得到锻炼机会；教育训练是基础性工作，因为手头工作忙，不是每个人、每个部门都特别理解配合，但自己感到很有意义、很有干劲，业务能力和综合素质都有提升等等；另一方面又要适可而止，比如你是如何选择县局的（我估计领导不会问这类问题）、将来如何打算，你就没必要竹筒倒豆子，把底牌都亮出来，考研没考上、市区没岗位，到这里权宜之计，将来还想回市区之类，这就太蠢了。<br>其三，不抢风头。你才二十几岁，青春正好，C也是女性，半老徐娘。局长固然有涵养，但自觉不自觉还是容易把注意力放在你这里。如果你再情绪高涨，两人互动频频、过于热络，C难免要吃醋，回去你就没什么好果子吃。所以不只是要夸C、尊重C，还要格外低调、把握分寸，接话、答问为主，且注意简明扼要，防止长篇大论，拿不准的话题不要主动发起，聊天过程中，多与C进行眼神交流（比如故意对某件事、某项数据拿不准，征询请示的眼神看C），让她始终感觉你是跟班，自己是这场活动的女主角。<br>3.另外几条建议：<br>其一，饭桌上，如果他们聊天说起入党的事情，你可以半开玩笑说一句，组织上能不能多给年轻人一些入党名额，自己也一直在向党组织靠拢，暂时还没有机会，请局长多多关心一下。如果全程没说入党的事情，也没有特别合适的由头引起来，建议你不要在饭桌上突兀提及这个要求。饭后发个短信微信，表达入党愿望，请领导考虑考察之类，会更合适一些。<br>其二，想入党，首先你自己态度和行动要积极，这比你找领导、托关系还重要。总的来说肯定是名额有限、论资排辈，但你态度特别积极，参加各种党团活动比较多，思想汇报材料写得多，工作也比较出彩，领导就很容易帮你说话，节奏肯定快得多。此外，党员身份你并不是你遴选的主要障碍，关键还是要在做好工作的前提下，下功夫练文笔、刷题备考。现在有男朋友呵护着，吃喝玩乐少不了，时间一不留神就混过去了，到时候万事俱备、笔试不过线等于零。<br>其三，工作和学习是一回事，既不要埋头死学（老黄牛），也不要投机取巧（挑肥拣瘦），务实的精神、负责的态度、灵活的策略、出彩的意识，都很重要，都不可偏废。我看你机灵劲儿是够了，甚至有点冒，下一步应该在踏实稳重、厚积薄发方面下功夫，稍微往回收一收，防止沾沾自喜的小聪明和浮躁心态，防止被基层公安的糟糕风气熏染太过。</p></div>
+      </div>
+      
+      <div class="reflection-area">
+        <div class="block-label">✍️ 阅后思考</div>
+        <textarea 
+          id="reflection_3580" 
+          class="reflection-input" 
+          placeholder="写下你的思考和感悟..."
+          oninput="saveReflection(3580, this.value)"
+        ></textarea>
+        <div class="reflection-hint">💡 自动保存到浏览器本地，关闭页面后下次打开仍在</div>
+      </div>
+      
+      <div class="card-footer">
+        <a href="https://github.com/KKJOJO/zsxq-daily-push/issues/new?title=不喜欢Q3580&labels=dislike&body=自动标记" class="dislike-link" target="_blank">👎 不喜欢这条</a>
+        <span class="qid">#3580</span>
+      </div>
+    </article>
+  
+
+    <article class="card" id="q5960">
+      <div class="card-header">
+        <span class="card-num">2/5</span>
+        <span class="card-topic">七、提拔晋升</span>
+        <span class="badge-priority">⭐重点</span>
+        <span class="badge-tag">选调生、新人公务员</span>
+      </div>
+      <h2 class="card-title">北大计算机硕士临近毕业，拿到3年直博机会，直接走选调还是念完博士再说？清北学历晋升还有优势吗？</h2>
+      <div class="card-meta">
+        <span>🏛️ 公务员</span>
+        <span>📍 不明</span>
+        <span>👤 不明</span>
+        <span>提问人：MagicData</span>
+      </div>
+      
+      <div class="content-block question">
+        <div class="block-label">📝 提问内容</div>
+        <div class="block-text"><p>老师您好，我是北京大学计算机专业的待毕业硕士研究生，得到了3年的硕转博名额，因为老家是河南的，所以我是想着毕业后参与河南省清北定向选调，不知道3年的博士还有没有性价比？还是说早早上岸占个坑位更好一点？清北选调生目前在职级晋升上还有没有优势？感谢老师的答复</p></div>
+      </div>
+      
+      <div class="content-block reply">
+        <div class="block-label">💬 公周回复</div>
+        <div class="block-text"><p>清北选调肯定有很大优势，特别是双清双北、三清三北。但我建议，还是应该把博士读下来，等毕业看看Offer情况，看看AI革命的进展，再选择进高校、进大厂还是走选调。这么好的学历、这么好的专业，就算硕士学历走选调也很浪费。官场起起伏伏、险象环生，最后成才的是极少数，能够全身而退的更少。要防止自己寄托过高期望，进来以后才知道落差多大，懊悔也迟了。多给自己一点时间想想，多了解真实的体制内生活。人生路选错，成本不堪承受。<br>即便打定主意走仕途，北大博士毕业留校，早点在学校提拔副处，再走人才引进到区县，直接副县长副区长起步，这才是真正的快车道。这些年提拔快的清北干部，大多是这个路子。如果你硕士毕业走选调，最多也就是四级主任科员，现在很少有破格、越级提拔，一步步熬上去，比其他名校同学快不了多少，其中还有相当多的不确定因素，很容易泯然众人。</p></div>
+      </div>
+      
+      <div class="reflection-area">
+        <div class="block-label">✍️ 阅后思考</div>
+        <textarea 
+          id="reflection_5960" 
+          class="reflection-input" 
+          placeholder="写下你的思考和感悟..."
+          oninput="saveReflection(5960, this.value)"
+        ></textarea>
+        <div class="reflection-hint">💡 自动保存到浏览器本地，关闭页面后下次打开仍在</div>
+      </div>
+      
+      <div class="card-footer">
+        <a href="https://github.com/KKJOJO/zsxq-daily-push/issues/new?title=不喜欢Q5960&labels=dislike&body=自动标记" class="dislike-link" target="_blank">👎 不喜欢这条</a>
+        <span class="qid">#5960</span>
+      </div>
+    </article>
+  
+
+    <article class="card" id="q1068">
+      <div class="card-header">
+        <span class="card-num">3/5</span>
+        <span class="card-topic">一、向上管理</span>
+        
+        <span class="badge-tag">新入职</span>
+      </div>
+      <h2 class="card-title">如何利用中秋节与领导增进关系？</h2>
+      <div class="card-meta">
+        <span>🏥 事业单位</span>
+        
+        
+        <span>提问人：匿名用户</span>
+      </div>
+      
+      <div class="content-block question">
+        <div class="block-label">📝 提问内容</div>
+        <div class="block-text"><p>老师您好，我是刚入职半年的县城事业编，有关拜访领导的问题咨询一下。<br>今年刚入职的时候，被办公室主任领着见了编制所在单位领导Y主任一次。做了自我介绍。<br>然后就直接被借调到别的平级中心工作了。<br>再遇上工作三个月左右吧，早上在单位食堂吃饭遇到Y主任一次，吃饭时候我主动打了招呼，他询问了我的情况，得知了我的居住地，他说他曾经在我们村住过一段时间，和我父亲还认识（我父亲已过世），但是没有说他们的交情。<br>我妈并不认识他，但是知道他的妹妹在我们村居住过，现在她妹妹也不在我们县城住了。<br>之后就没有再交流过。在一个楼上班，但是不在同一楼层，基本遇不上，平时见面也就是我打个招呼，他点个头。<br>最近中秋节快到了，我想去拜访下，因为他算是我们单位的班子成员，实权领导，也是我编制所在中心的一把，同时我现在工作的中心的一把和他关系也很好。<br>可能过段时间职称考试的事还需要找他给办一下。<br>所以我想问：<br>1，我虽然有他电话，单位大群也有他微信，但是没有单独联系过他，怎么联系合适，怎么组织说辞，以什么理由去拜访呢？<br>2，带点什么东西比较好，现在也不了解他的喜好，也不敢去打听同事<br>3，这个节需要去拜访下我现在工作中心的一把吗<br>4，如果能成行，去了他家说点什么比较合适，</p></div>
+      </div>
+      
+      <div class="content-block reply">
+        <div class="block-label">💬 公周回复</div>
+        <div class="block-text"><p>1.提问前请大家一定看一下置顶的提问须知，不然像这个提问，刚好错过时间。每天都是40多个提问在排队，我只能顺着时间线往前走，很难把每个提问都完全看一遍，耽误了节奏对您也不太好，我也感觉内疚。确需加急的，请通过微信联系。<br>2.现在很多同学的思想还是停留在十八大以前，总觉得过节要不要去家里送送东西才踏实。你非要送，我也不评论什么，但最起码要选个合适的时间节点对吧？你是小年轻，跟领导也没什么接触，贸然要求去家里，傻瓜都知道领导会坚决拒绝甚至反感。仨瓜俩枣到底有什么魅力，让领导屈尊降贵去接呢？现在大形势这么严，每次过节纪委都盯着，好多跟领导有仇的都盯着呢，如果因为你冒冒失失跑一趟，把领导装进去了，你自己也毁了前途，划得来吗？<br>我为什么手把手教给大家写短信、发短信或微信呢？就是因为这种感情沟通方式最简单、最安全、最方便、效果最好。领导就算再油滑，他也不会喜欢油滑的年轻人，明明就是个菜鸟，非要掐着烟头、皱着眉头，拿腔拿调装混社会的，让过来人看着多可笑啊。<br>3.过节发个短信，节后、平时工作中，去领导办公室汇报工作也好，签文件捎带套套近乎也好，都是可以的。关键是顺势而为、顺理成章、顺水推舟，让人不觉得突兀。等领导给你办了大事、帮了大忙，你非要表示也就表示一下，也值当的冒一回险。</p></div>
+      </div>
+      
+      <div class="reflection-area">
+        <div class="block-label">✍️ 阅后思考</div>
+        <textarea 
+          id="reflection_1068" 
+          class="reflection-input" 
+          placeholder="写下你的思考和感悟..."
+          oninput="saveReflection(1068, this.value)"
+        ></textarea>
+        <div class="reflection-hint">💡 自动保存到浏览器本地，关闭页面后下次打开仍在</div>
+      </div>
+      
+      <div class="card-footer">
+        <a href="https://github.com/KKJOJO/zsxq-daily-push/issues/new?title=不喜欢Q1068&labels=dislike&body=自动标记" class="dislike-link" target="_blank">👎 不喜欢这条</a>
+        <span class="qid">#1068</span>
+      </div>
+    </article>
+  
+
+    <article class="card" id="q523">
+      <div class="card-header">
+        <span class="card-num">4/5</span>
+        <span class="card-topic">七、提拔晋升</span>
+        
+        
+      </div>
+      <h2 class="card-title">基层单位副科长工作比较顶真，自从单位来了一个副镇长，单位人际关系一团糟，我该怎么顺利开展工作？</h2>
+      <div class="card-meta">
+        <span>🏛️ 公务员</span>
+        <span>📍 街道乡镇机关</span>
+        <span>👤 正科级</span>
+        <span>提问人：匿名</span>
+      </div>
+      
+      <div class="content-block question">
+        <div class="block-label">📝 提问内容</div>
+        <div class="block-text"><p>#我该怎么办？<br>公周老师，我35周岁，副科长。在我们单位一直也是按部就班工作，做好手头工作，平衡好家庭。别人评价是工作比较顶真，不会推活儿，情商不高，有的时候因为工作会上火。我觉得这也是我的致命弱点。<br>前两年，我们这种边缘单位来了一位乡镇的副镇长。之前的一把手只让他负责半个科室，现在的一把手让他分管办公室，然后各种风波，因为干活就是派别的科室的人，或者活儿推到别的科室去。因此和别的科室科长关系都不好，特别是和我之前科长起了严重冲突。<br>之前科长也是有点背景的，被他踢走后，他换了我的一个平级的同事，和我差不多大，到我所在科室以副代正，指导我工作。在我们单位，大家都是井水不犯河水，慢慢熬资历，现在大家都觉得不可思议，我也觉得是欺负人。<br>好在人事刚开始不久，我就去党政机关挂职，挂职期间，没有按时回单位开会，就被扣上党性有问题的帽子，周末因为两个地方的工作冲突还要加班，在此期间一把手领导答应给我换科室。<br>挂职结束后，虽然工作获得认可，但是没有能留下来。本人无背景。<br>回单位后，还是在原科室工作，原因是以副代正的代科长因为工作能力的问题经常被一把手领导训斥。分管领导现在也不愿意让我去别的科室。但是目前工作问代科长，都是一问三不知，什么都不知道，分管领导也是经常以会代会，具体如何完成从来不说，场面上的话一大堆，导致现在工作很难开展，但是因为无法落实导致我被训斥，代科长就是不说话不表态不发言。<br>目前我很尴尬，位置尴尬，工作也不能顺利开展，虽然人际关系还可以，但是总觉得不开心，不能换科室，我该怎么办？请指导一二，谢谢。</p></div>
+      </div>
+      
+      <div class="content-block reply">
+        <div class="block-label">💬 公周回复</div>
+        <div class="block-text"><p>1.惹不起的人，就尽量避免撞到枪口上。现在已经有足够多的人对他不满意了，你最好的办法是明哲保身、静观其变。但你是怎么做的呢？<br>当初他调过来，啥都不懂，还胡乱指挥，你肯定对他没什么好印象；后来又安排同资历人员骑到你脖子上，你就开始站到他的对立面去了。心有不满，言谈举止、脸色态度上肯定好不到哪里去，结果不仅没有解决任何问题，反而激化矛盾，被他打入反对派阵营，各种揪小辫子、扣大帽子。这充分表明，情绪失控乃至外露，是职场大忌，只会让事情越来越糟。<br>实际上，最开始如果你态度平和克制，更多忍让，释放一点善意信号，他可能直接推动你来主持工作了。别人眼里的灾难，可能成为你的机会。一念天堂、一念地狱，其实就是这么简单。<br>2.一把手现在也很烦，为什么他要骂B 狗血淋头？因为对副手A不好撕破脸，但打狗可以给主人看，正好发一发邪火。你看不到这一层，说明你大局观还差很远，找找我前两天那篇文章看看。你不体谅领导，看不到领导的难处，出了问题只顾自己委屈，要求调换岗位，凭什么啊？你难受就去找领导，领导难受找谁去？领导欠你的？领导是你家垃圾筐？这充分说明，你还停留在搬砖的层次，距离管人管事当领导还差很远。<br>3.你该怎么办？<br>其一，既然一把手也烦这个副手，敌人的敌人就是朋友，你要好好团结争取，通过这段困难时期，让一把手看到你的忠诚、胸怀、气度、能力。找领导是可以的，你得汇报工作，讲讲困难，请求指示，聆听教诲，领导的难处你要谅解，主动把工作做好，尽可能不给领导添乱，让他看到你是中流砥柱，让他看到你一颗红心为了工作、为了他，把这个人情结结实实抓到手里。<br>工作这么难做，一把手还安排你去挂职，显然是有培养重用之心的。你总得也投桃报李，有点牺牲奉献精神吧？<br>目前状况肯定是不正常的、暂时的，新手搞得鸡飞狗跳，自然有人会教训他，调离可能就在明天。你熬到雨过天晴，就是你提拔的好日子了。<br>其二，关于目前工作，一把手看得到的、关心的，容易捅娄子的，你还是要忍辱负重做一下，这个时候不要撂挑子。A 和 B 不表态？没关系啊，工作有规范、以往有惯例，各种政策规定很清楚，照此办理就出不来大错。实在需要应变的，你就拿两个方案让他们挑，我就不相信他们两个一直装死尸。实在他们不吭声的，你就按照自己的意见办，然后给一把手发个短信同步一下。只要工作不出明显纰漏，同时一把手认可，你就稳如泰山。这其实是送上门的机会，无名无分坚持一段时间，领导就会考虑你的有名有份了。<br>其三，其他不太重要的，节奏可控的一般性工作你就放着，让分管领导和代科长去想办法，不要大包大揽。灵活用一下拖字诀。</p></div>
+      </div>
+      
+      <div class="reflection-area">
+        <div class="block-label">✍️ 阅后思考</div>
+        <textarea 
+          id="reflection_523" 
+          class="reflection-input" 
+          placeholder="写下你的思考和感悟..."
+          oninput="saveReflection(523, this.value)"
+        ></textarea>
+        <div class="reflection-hint">💡 自动保存到浏览器本地，关闭页面后下次打开仍在</div>
+      </div>
+      
+      <div class="card-footer">
+        <a href="https://github.com/KKJOJO/zsxq-daily-push/issues/new?title=不喜欢Q523&labels=dislike&body=自动标记" class="dislike-link" target="_blank">👎 不喜欢这条</a>
+        <span class="qid">#523</span>
+      </div>
+    </article>
+  
+
+    <article class="card" id="q13">
+      <div class="card-header">
+        <span class="card-num">5/5</span>
+        <span class="card-topic">一、向上管理</span>
+        
+        
+      </div>
+      <h2 class="card-title">之前与领导闹别捏，现在我想和他合作，还有挽回的余地吗？</h2>
+      <div class="card-meta">
+        <span>🏛️ 公务员</span>
+        <span>📍 不明</span>
+        <span>👤 不明</span>
+        <span>提问人：匿名用户</span>
+      </div>
+      
+      <div class="content-block question">
+        <div class="block-label">📝 提问内容</div>
+        <div class="block-text"><p>原来的主任成为副所长，但科研工作仍在我室，而另外两名同事调离了。又发生了一件比较大的事情，就是副所长和他爱人（也在我们单位工作）被人举报违规出国，导致他爱人辞职。他一段时间也很狼狈。<br>三年来，我们工作上各干各的，不太有交集。而在主任位置上，我也慢慢认识到之前跟他的矛盾，很大一部分是我的问题，所以我也主动跟他表示自己当时不懂事，请他原谅。另外我也认识到，在单位这个环境下，我如果能够和他合作，路子应该比较好走。但是我很担心，毕竟之前跟他合作不愉快，而且他的人品不咋地，玩心思我根本不是他的对手。所以有一次他要我参加他的一个项目，我本能的拒绝了。最近一年以来，我感觉到他在给我使跘，我现在该怎么办？</p></div>
+      </div>
+      
+      <div class="content-block reply">
+        <div class="block-label">💬 公周回复</div>
+        <div class="block-text"><p>受字数限制，题主分两次发的，为方便大家阅读，我在这里重新贴一下，请大家先讨论一下，帮忙出出主意。<br>“您好，想就工作当中的人际关系问题向您请教，我是一名省级科研机构的科技人员，十年前，我博士毕业来单位工作，期间和研究室主任处的并不愉快，但也没有闹开，就是私底下跟所长、中心主任以及同研究室的同事表达过不满。但可能被别人利用了。期间研究室主任要升任所长助理，被人举报给下属奖金分配问题，上级单位找我了解情况，我如实说了我的奖金情况（当时他给我们的奖金很少）。虽然这次事件并没有影响到他的升迁，但我想事情可能传到他的耳朵里，会让他误解是我举报的。还有，也被同研究室的一个同事利用，导致很多好处慢慢偏向于这个同事，我和研究室主任的关系越来越差。 3年前，新所长上任，调整了结构，我成为研究室的新主任。<br>原来的主任成为副所长，但科研工作仍在我室，而另外两名同事调离了。又发生了一件比较大的事情，就是副所长和他爱人（也在我们单位工作）被人举报违规出国，导致他爱人辞职。他一段时间也很狼狈。三年来，我们工作上各干各的，不太有交集。而在主任位置上，我也慢慢认识到之前跟他的矛盾，很大一部分是我的问题，所以我也主动跟他表示自己当时不懂事，请他原谅。另外我也认识到，在单位这个环境下，我如果能够和他合作，路子应该比较好走。但是我很担心，毕竟之前跟他合作不愉快，而且他的人品不咋地，玩心思我根本不是他的对手。所以有一次他要我参加他的一个项目，我本能的拒绝了。最近一年以来，我感觉到他在给我使跘，我现在该怎么办？”</p></div>
+      </div>
+      
+      <div class="reflection-area">
+        <div class="block-label">✍️ 阅后思考</div>
+        <textarea 
+          id="reflection_13" 
+          class="reflection-input" 
+          placeholder="写下你的思考和感悟..."
+          oninput="saveReflection(13, this.value)"
+        ></textarea>
+        <div class="reflection-hint">💡 自动保存到浏览器本地，关闭页面后下次打开仍在</div>
+      </div>
+      
+      <div class="card-footer">
+        <a href="https://github.com/KKJOJO/zsxq-daily-push/issues/new?title=不喜欢Q13&labels=dislike&body=自动标记" class="dislike-link" target="_blank">👎 不喜欢这条</a>
+        <span class="qid">#13</span>
+      </div>
+    </article>
+  
+  
+  <div class="page-footer">
+    <p>⚙️ <a href="https://github.com/KKJOJO/zsxq-daily-push/issues?q=label%3Adislike">管理不喜欢列表</a></p>
+    <p>数据来源：公周问答 1-6200 · 自动推送</p>
+  </div>
+
+  <script>
+    // === 阅后思考：localStorage 持久化 ===
+    const STORAGE_PREFIX = 'zsxq_reflection_';
+    
+    function saveReflection(id, value) {
+      try {
+        localStorage.setItem(STORAGE_PREFIX + id, value);
+      } catch(e) {}
+    }
+    
+    function loadReflections() {
+      document.querySelectorAll('.reflection-input').forEach(textarea => {
+        const id = textarea.id.replace('reflection_', '');
+        const saved = localStorage.getItem(STORAGE_PREFIX + id);
+        if (saved) textarea.value = saved;
+      });
+    }
+    
+    // 页面加载时恢复
+    loadReflections();
+  </script>
+</body>
+</html>
